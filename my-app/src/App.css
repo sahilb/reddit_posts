@@ -36,11 +36,12 @@ body {
 }
 
 .row {
-  height: 100px;
+  height: 80px;
   width: 100%;
+  min-width: 800px;
   margin: 2px 0px 6px 0px;
   border-bottom: 1px solid #e2e2e2;
-  background: whitesmoke;
+  background: ghostwhite;
 }
 
 .row .row-section {
@@ -58,12 +59,12 @@ body {
 .row .title {
   text-align: left;
   margin: 10px 15px;
-  font-size: 16px;
+  font-size: 13px;
   color: #561f11;
 }
 .row .comments {
   margin: 10px 15px;
-  font-size: 13px;
+  font-size: 12px;
   text-align: left;
   color: #08194c;
 }
@@ -80,8 +81,8 @@ body {
     background-position: left;
     background-repeat: no-repeat;
     background-size: 2900%;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     left: 50%;
     top: 50%;
     cursor: pointer;
@@ -92,8 +93,8 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   background-size: 2900%;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   left: 50%;
   top: 50%;
   cursor: pointer;

@@ -3,9 +3,9 @@ import React from 'react';
 export default class Row extends React.Component {
     splitTitle() {
         var title = this.props.post.title;
-
-        if (title.length > 200) {
-            title = title.slice(0, 200);
+        title = title + ' ' + title + '  ' + title;
+        if (title.length > 160) {
+            title = title.slice(0, 160);
             title = title + '...'
         }
         var words = title.split(' ');
@@ -14,7 +14,7 @@ export default class Row extends React.Component {
         const totalLength = title.length;
 
         words.forEach(word => {
-            if (word.length + prev.length > 75) {
+            if (word.length + prev.length > 90) {
                 lines.push(prev);
                 prev = '';
             }
