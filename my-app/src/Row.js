@@ -2,25 +2,33 @@ import React from 'react';
 
 export default class Row extends React.Component {
     splitTitle() {
+        var title = this.props.post.title;
 
-        var words = this.props.post.title.split(' ');
+        if (title.length > 200) {
+            title = title.slice(0, 200);
+            title = title + '...'
+        }
+        var words = title.split(' ');
         var lines = [];
         var prev = ''
+        const totalLength = title.length;
+
         words.forEach(word => {
-            if (word.length + prev.length > 65) {
+            if (word.length + prev.length > 75) {
                 lines.push(prev);
-                prev = ''
-            } else {
-                prev += (word + ' ');
+                prev = '';
             }
+            prev += (word + ' ');
         })
         lines.push(prev);
+
+
         return lines;
 
     }
     render() {
         const { post } = this.props;
-        const url =  "https://www.reddit.com" + post.permalink;
+        const url = "https://www.reddit.com" + post.permalink;
         return (
             <div className="row" key={post.id}>
                 <div className="thumbnail row-section">
@@ -29,11 +37,11 @@ export default class Row extends React.Component {
                 <div className="favorite-icon row-section"></div>
                 <div className="row-section" >
                     <a href={url} target="_blank" className="links">
-                    <div className="title">
-                        {this.splitTitle().map(line => {
-                            return <div>{line}</div>
-                        })}
-                    </div>
+                        <div className="title">
+                            {this.splitTitle().map((line, i) => {
+                                return <div key={'lineid-' + i}>{line}</div>
+                            })}
+                        </div>
                     </a>
                     <div className="comments">
                         {post.num_comments} comments
