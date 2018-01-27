@@ -1,0 +1,23 @@
+{
+  "name": "reddit_posts",
+  "version": "1.0.0",
+  "description": "show personalized reddit posts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilb/reddit_posts.git"
+  },
+  "keywords": [
+    "reddit",
+    "post"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilb/reddit_posts/issues"
+  },
+  "homepage": "https://github.com/sahilb/reddit_posts#readme"
+}
