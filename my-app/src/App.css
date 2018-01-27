@@ -75,3 +75,27 @@ body {
 .row:hover {
   background-color: rgba(179, 205, 226, 0.2); 
 }
+
+.favorite-icon {
+    background-image: url(https://abs.twimg.com/a/1516848903/img/animations/web_heart_animation_edge.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 2900%;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+}
+
+.favorite-icon-enabled {
+  background-image: url(https://abs.twimg.com/a/1516848903/img/animations/web_heart_animation_edge.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 2900%;
+  height: 50px;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  cursor: pointer;
+}

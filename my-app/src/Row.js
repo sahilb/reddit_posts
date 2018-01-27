@@ -28,7 +28,7 @@ export default class Row extends React.Component {
                 </div>
                 <div className="favorite-icon row-section"></div>
                 <div className="row-section" >
-                    <a href={url} target="_blank" class="links">
+                    <a href={url} target="_blank" className="links">
                     <div className="title">
                         {this.splitTitle().map(line => {
                             return <div>{line}</div>
